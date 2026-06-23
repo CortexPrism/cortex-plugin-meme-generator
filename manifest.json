@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-meme-generator",
-  "version": "1.0.0",
-  "description": "Meme & Viral Content Generator — Create contextually relevant tech memes and viral-format developer content",
+  "version": "1.0.1",
+  "description": "Meme & Viral Content Generator \u2014 Create contextually relevant tech memes and viral-format developer content",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,13 +9,35 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-meme-generator",
   "homepage": "https://cortexprism.io/marketplace/plugins/meme-generator",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
-    { "name": "meme_generate", "description": "Generate meme from description", "params": [] },
-    { "name": "meme_find_template", "description": "Find relevant meme template", "params": [] },
-    { "name": "meme_adapt", "description": "Adapt meme for developer audience", "params": [] }
+    {
+      "name": "meme_generate",
+      "description": "Generate meme from description",
+      "params": []
+    },
+    {
+      "name": "meme_find_template",
+      "description": "Find relevant meme template",
+      "params": []
+    },
+    {
+      "name": "meme_adapt",
+      "description": "Adapt meme for developer audience",
+      "params": []
+    }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
